@@ -31,8 +31,10 @@ def loop():
         # show frame
         glfw.swap_buffers(window)
 
-        # user input
-        
+        # user input    
+        if glfw.get_key(window, glfw.KEY_BACKSPACE) == glfw.PRESS:
+            glfw.set_window_should_close(window, True)
+            
         # events
         glfw.poll_events()
 
