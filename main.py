@@ -6,7 +6,7 @@ import pygfx as gfx
 from wgpu.gui.auto import WgpuCanvas
 
 canv = WgpuCanvas(title="PyGFX", size=(1280, 720))
-rend = gfx.renderers.WgpuRenderer(canv, show_fps=True)
+rend = gfx.renderers.WgpuRenderer(canv)
 camera = Camera(80, 1280, 720, 0.1, 2000)
 cam = gfx.PerspectiveCamera(80, camera.width / camera.height, 0.1, 2000) # type: ignore
 disp = gfx.Display(canvas= canv, renderer= rend, camera= cam)
@@ -14,7 +14,6 @@ disp = gfx.Display(canvas= canv, renderer= rend, camera= cam)
 scene = gfx.Scene()
 
 #debug
-
 def __main__():
     while True:
         disp.show(scene)
