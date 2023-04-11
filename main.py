@@ -13,10 +13,10 @@ disp = gfx.Display(canvas= canv, renderer= rend, camera= cam)
 #initialising
 scene = gfx.Scene()
 
-def loop():
+def __main__():
     while True:
         disp.show(scene)
         # cap
         sleep(c1000)
 
-loop()
+__main__()
