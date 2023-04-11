@@ -3,15 +3,17 @@ from settings import *
 from const import *
 from colors import *
 import pygfx as gfx
-from wgpu.gui.auto import WgpuCanvas, run
+from wgpu.gui.auto import WgpuCanvas
 
 canv = WgpuCanvas(title="PyGFX", size=(1280, 720))
-rend = gfx.renderers.WgpuRenderer(canv)
+rend = gfx.renderers.WgpuRenderer(canv, show_fps=True)
 camera = Camera(80, 1280, 720, 0.1, 2000)
 cam = gfx.PerspectiveCamera(80, camera.width / camera.height, 0.1, 2000) # type: ignore
 disp = gfx.Display(canvas= canv, renderer= rend, camera= cam)
 #initialising
 scene = gfx.Scene()
+
+#debug
 
 def __main__():
     while True:
