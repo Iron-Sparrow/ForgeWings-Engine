@@ -12,8 +12,8 @@ cam = gfx.PerspectiveCamera(80, camera.width / camera.height, 0.1, 2000) # type:
 disp = gfx.Display(canvas= canv, renderer= rend, camera= cam)
 #initialising
 scene = gfx.Scene()
-
 #debug
+
 def __main__():
     while True:
         disp.show(scene)
