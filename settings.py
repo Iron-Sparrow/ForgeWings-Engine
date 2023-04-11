@@ -1,2 +1,7 @@
-renMod = ['2DL', '2D', 'Vec2D', '2.5D', 'Raycast3D' ,'Raster3D', 'RayTrace3D', '4D']
-valid = '2DL', 'Raycast3D'
+class Camera:
+    def __init__(self,fov: int,  width: int, height: int, near: float, far: int):
+        self.fov = fov
+        self.width = width
+        self.height = height
+        self.near = near
+        self.far = far

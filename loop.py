@@ -1,45 +1,22 @@
 from time import sleep
-import glfw
-import moderngl as mgl
 from settings import *
 from const import *
-from texture import *
+from colors import *
+import pygfx as gfx
+from wgpu.gui.auto import WgpuCanvas, run
 
-# initialize glfw
-glfw.init()
-
-# create window
-window = glfw.create_window(1280, 720, 'preview', None, None)
-glfw.make_context_current(window)
-
-# create moderngl context
-ctx = mgl.create_context(require=410, standalone=True)
-
-# load the background texture
-background, _ = LoadBackground("Lines.png", ctx)
-
-#debug
+canv = WgpuCanvas(title="PyGFX", size=(1280, 720))
+rend = gfx.renderers.WgpuRenderer(canv)
+camera = Camera(80, 1280, 720, 0.1, 2000)
+cam = gfx.PerspectiveCamera(80, camera.width / camera.height, 0.1, 2000) # type: ignore
+disp = gfx.Display(canvas= canv, renderer= rend, camera= cam)
+#initialising
+scene = gfx.Scene()
 
 def loop():
-    while not glfw.window_should_close(window):
-        # render
-        ctx.clear(0.0, 0.0, 0.0, 1.0)
-
-        # render the background texture
-        background.use()
-
-        # show frame
-        glfw.swap_buffers(window)
-
-        # user input
-        
-        # events
-        glfw.poll_events()
-
+    while True:
+        disp.show(scene)
         # cap
         sleep(c1000)
-        
-    while glfw.window_should_close(window):
-        glfw.terminate()
 
 loop()
