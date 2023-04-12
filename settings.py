@@ -1,8 +1,4 @@
-from sys import platform as pform
 import pygfx as gfx
-
-if pform == "linux":
-    pass
 
 class Camera:
     def __init__(self,fov: int,  width: int, height: int, near: float, far: int):
