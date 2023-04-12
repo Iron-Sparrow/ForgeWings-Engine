@@ -1,7 +1,6 @@
 from time import sleep
 from settings import *
 from const import *
-from colors import *
 import pygfx as gfx
 from wgpu.gui.auto import WgpuCanvas
 
