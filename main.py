@@ -3,6 +3,7 @@ from settings import *
 from const import *
 import pygfx as gfx
 from wgpu.gui.auto import WgpuCanvas
+from AntiAliasing import *
 
 canv = WgpuCanvas(title="PyGFX", size=(1280, 720))
 rend = gfx.renderers.WgpuRenderer(canv)
