@@ -1,7 +1,7 @@
 import pygfx as gfx
 from pygfx.renderers.wgpu import WgpuRenderer, register_wgpu_render_function, WorldObjectShader, RenderMask, Binding
 
-tp = 'type'
+tp = 'render'
 
 class FXAA(WorldObjectShader):
     type = tp
