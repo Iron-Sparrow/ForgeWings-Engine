@@ -13,3 +13,9 @@
   Currently there's not much anyone can do, but if anyone wants to contribute to the code, or wants to use it for their own game or even a new game engine, they can. While it's not an obligation, a shoutout or a link to the project would be appreciated.
   Small note before anyone wants to contribute: vandalising, innapropriate behaviour and/or content, spam, etc. is forbidden and we reserve our right to revert any changes and to block any user or contributor.
   With that said, the project is currently under the MIT license but we plan to modify it a bit in the future.
+  
+## I want to help !
+
+### Make a donation
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V0LFW8Y)
+### Contribute to the code
