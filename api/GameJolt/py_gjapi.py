@@ -175,7 +175,7 @@ class GameJoltTrophy(object):
 					miniurl = miniurl[:1]
 					URL += miniurl
 				else:
-					raise 'Invalid type for trophy: must be int or list.'
+					raise TypeError(f'Invalid type for trophy: must be int or list.')
 		return self.setSignatureAndgetJSONResponse(URL)
 
 	def addAchieved(self, trophy_id):
