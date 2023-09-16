@@ -18,7 +18,7 @@
   Small note before anyone wants to contribute: vandalising, innapropriate behaviour and/or content, spam, etc. is forbidden and we reserve our right to revert any changes and to block any user or contributor.
   With that said, the project is currently under the MIT license but we plan to modify it a bit in the future.
   
-## I want to helpxx
+## I want to help
 
 ### Make a donation
 
