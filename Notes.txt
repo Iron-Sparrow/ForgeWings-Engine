@@ -3,3 +3,4 @@ PySDL2 is mostly for 2D and it's not worth trying to do 3d in it.
 pybgfx and bgfx-python have limited support currently
 
 ModernGL seems to be a good compromise for now.
+Doesn't work
