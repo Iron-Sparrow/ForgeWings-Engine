@@ -45,3 +45,15 @@ c500 = 2e-3
 cDEM = 1.5015015e-3
 c1000 = 1e-3
 cUN = 5e-4
+
+class Physics_Constants:
+    def __init__(self) -> None:
+        pass
+
+class Frametime_Constants:
+    def __init__(self) -> None:
+        pass
+        
+class Constants:
+    def __init__(self) -> None:
+        pass
